@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-------------- CSS Link ------------------------------------------>
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+    <!-------------------  Remix Icons -------------------------->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <!-------------------  FavIcon -------------------------->
+    <link rel="icon" type="image/x-icon" href="/assets/images/unknown2.png">
+</head>
+<body>
+    <header class="cabecalho"> <!---caixa para organizar os itens da navegacao-->
+        <div class="title">
+            <a href="" class="navegacao-logo" id="navegacalogo">PortFolio</a>
+        </div>
+        <nav class="navegacao"> <!--caixa dos links de navegacao-->
+            <ul>
+                <li>
+                    <a href="#home" class="links" >Início</a>
+                    </li>
+                <li>
+                    <a href="#sobre" class="links">Sobre mim</a>
+                </li>
+                <li>
+                    <a href="#habilidades" class="links">Habilidades</a>
+                </li>
+                <li>
+                    <a href="#projetos" class="links">Projetos</a>
+                </li>
+            </ul>
+        </nav>
+        <!------------------Light Mode------------------------->
+        <div class="light-mode" id="light-mode">
+            <i class="ri-moon-line" id="ri-moon-line"></i>
+        </div>
+    </header>
+
+    <main class="container" id="container">
+
+        <!------Sessao Esquerda------------->
+        <section class="container-esquerdo">
+            <h1 class="title-section">Olá, meu nome é Leandro e eu sou <strong>Desenvolvedor Front End</strong>.
+            </h1>
+
+            <button onclick="MaisSobre()">Mais Sobre mim</button>
+
+            <div class="redes-sociais" id="icones">
+                <a href="https://github.com/LeandroAS27" target="_blank">
+                    <i class="ri-github-line"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/leandroas27/" target="_blank">
+                    <i class="ri-linkedin-box-line"></i>
+                </a>
+            </div>
+        </section>
+
+         <!------Sessao Direita------------->
+        <section class="container-direito">
+            <img src="/assets/images/unknown2.png" alt="Minha foto">            
+        </section>
+
+         <!------Sites em que Estudei------------->
+        <section class="patrocinador">
+            <h1 class="title-patrocinador">Sites em que estudei</h1>
+            <div class="patrocinador-item">
+                <a href="https://www.w3schools.com" target="_blank">
+                    <img src="/assets/images/w3school.png" alt="Logo da w3school" class="patrocinador_img">
+                </a>
+                <a href="https://www.youtube.com" target="_blank">
+                    <img src="/assets/images/Youtube.png" alt="Logo do Youtube" class="patrocinador_img">
+                </a>
+                <a href="https://www.freecodecamp.org" target="_blank">
+                    <img src="/assets/images/FreeCodeCamp_logo.svg.png" alt="Logo do FreeCodeCamp" class="patrocinador_img">
+                </a>
+                <a href="https://app.rocketseat.com.br" target="_blank">
+                    <img src="/assets/images/rocketseat.svg" alt="Logo da rocketseat" class="patrocinador_img">
+                </a>
+            </div>
+        </section>
+
+         <!--------------Sobre------------->
+        <section class="sobre-container">
+            <h1 class="titulo-sobre" id="sobre">Sobre</h1>
+            <p class="p-sobre">Eu sou o Leandro, tenho 22 anos, sou formado em Defesa Cibernética e sou Jogador Profissional de Counter-Strike. 
+                Mesmo em uma parte da minha vida sendo totalmente diferente do desenvolvimento front end, a programação foi muito importante na minha vida 
+                pois fez parte na minha formação que aprendi Python e JavaScript, e quando fiz alguns cursos no passado que foram de Java e de Front end também. Hoje em dia eu estou focado em me profissionalizar 
+                no mundo do desenvolvimento front end pois eu sempre gostei da parte das criações dos sites e das experiências que possa trazer para o usuário.</p>
+        </section>
+
+        <!--------------Habilidades------------->
+        <h1 class="title-carrossel" id="habilidades">Habilidades</h1>
+        <section class="carrossel">
+            <div class="container-carrossel" id="img">
+                <img src="/assets/images/icons8-html-144.png" alt="Logo do HTML">
+                <img src="/assets/images/icons8-css-144.png" alt="Logo do CSS">
+                <img src="/assets/images/icons8-javascript-144.png" alt="Logo do JavaScript">
+                <img src="/assets/images/icons8-nativo-de-reagir-144.png" alt="Logo do React">
+            </div>
+        </section>
+
+        <!--------------Projetos------------->
+        <h1 class="title-projetos" id="projetos">Projetos</h1>
+        <section class="container-projetos">
+            
+            <div class="produtos_container">
+                <!---Projeto 1------------->
+                <article class="produtos_card">
+                    <div class="produtos_conteudo">
+                        <img src="/assets/images/Relogio.png" alt="Imagem do Projeto Relogio" class="produtos_img">
+                        <h3 class="produtos_title">Relogio</h3>
+                        <span class="produtos_details">HTML CSS e JavaScript</span>
+
+                        <button onclick="irParaPagina()" class="button produtos_button">
+                            <i class="ri-github-line"></i>
+                        </button>
+                        <button onclick="irParaPagina2()" class="button produtos_button2">
+                            <i class="ri-code-line"></i>
+                        </button>
+                    </div>
+                </article>
+
+                <!-----Projeto 2-------------->
+                <article class="produtos_card">
+                    <div class="produtos_conteudo">
+                        <img src="/assets/images/Linker.png" alt="Imagem do Projeto Linker" class="produtos_img">
+                        <h3 class="produtos_title">Linker</h3>
+                        <span class="produtos_details">HTML CSS e JavaScript</span>
+    
+                        <button onclick="irParaPagina3()" class="button produtos_button">
+                            <i class="ri-github-line"></i>
+                        </button>
+                        <button onclick="irParaPagina4()" class="button produtos_button2">
+                            <i class="ri-code-line"></i>
+                        </button>
+                    </div>
+                </article>
+
+                <!----------Projeto 3----------->
+                <article class="produtos_card">
+                    <div class="produtos_conteudo">
+                        <img src="/assets/images/Tela-login-cs.png" alt="Imagem do Projeto da Tela de login CS" class="produtos_img">
+                        <h3 class="produtos_title">Tela Login CS</h3>
+                        <span class="produtos_details">HTML e CSS</span>
+    
+                        <button onclick="irParaPagina5()" class="button produtos_button">
+                            <i class="ri-github-line"></i>
+                        </button>
+                        <button onclick="irParaPagina6()" class="button produtos_button2">
+                            <i class="ri-code-line"></i>
+                        </button>
+                    </div>
+                </article>
+
+                <!----------Projeto 4----------->
+                <article class="produtos_card">
+                    <div class="produtos_conteudo">
+                        <img src="/assets/images/Calculadora-IMC.png" alt="Imagem do Projeto da Calculadora IMC" class="produtos_img">
+                        <h3 class="produtos_title">Calculadora IMC</h3>
+                        <span class="produtos_details">HTML CSS e JavaScript</span>
+    
+                        <button onclick="irParaPagina3()" class="button produtos_button">
+                            <i class="ri-github-line"></i>
+                        </button>
+                        <button onclick="irParaPagina4()" class="button produtos_button2">
+                            <i class="ri-code-line"></i>
+                        </button>
+                    </div>
+                </article>
+        </section>
+    </main>
+    <footer>
+        <div class="footer_content">
+            <div class="footer_contacts">
+                <h1>Logo</h1>
+                <p>Lorem bem pequeno feito por mim.</p>
+            </div>
+
+            <div class="footer_social_media">
+                <a href="#" class="footer-link" id="Instagram">
+                    <i class="ri-instagram-line"></i>
+                </a>
+
+                <a href="#" class="footer-link" id="Facebook">
+                    <i class="ri-facebook-line"></i>
+                </a>
+
+                <a href="#" class="footer-link" id="Whatsapp">
+                    <i class="ri-whatsapp-line"></i>
+                </a>
+            </div>
+            
+
+            <div class="footer_subscribe">
+                <h3>Entre em contato</h3>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                </p>
+
+                <div class="input_group">
+                    <input type="email" id="email" placeholder="Digite aqui">
+                    <button>
+                        <i class="ri-mail-line"></i>
+                    </button>
+                </div>
+            </div>
+        </div> <!-- Fechando div "footer_content" -->
+
+        <div class="footer_copyright">
+            &#169; Desenvolvido por Leandro Alves.
+        </div>
+    </footer>
+    <!--------------------------Scroll Up------------------------------------->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-wide-line scroll_icon"></i> 
+    </a>
+
+    <!--------------------------Scroll Reveal------------------------------------->
+    <script src="/assets/js/scrollreveal.min.js"></script>
+    <!--------------------------Main JS------------------------------------->
+    <script src="/assets/js/main.js"></script>
+</body>
+</html>
