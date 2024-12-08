@@ -78,7 +78,17 @@ function irParaPagina5() {
 }
 
 function irParaPagina6() {
-    window.open("https://leandroas27.github.io/Linker/", "_blank")
+    window.open("https://leandroas27.github.io/Tela-Login/", "_blank")
+}
+
+/* -------------------- Previsao Tempo ------------------------*/
+
+function irParaPagina7() {
+    window.open("https://github.com/LeandroAS27/PrevisaoTempo", "_blank");
+}
+
+function irParaPagina8() {
+    window.open("https://leandroas27.github.io/PrevisaoTempo/", "_blank")
 }
 
 /*-------------------------- Scroll Reveal Animation --------------- */
